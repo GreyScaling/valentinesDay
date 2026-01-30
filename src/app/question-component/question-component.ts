@@ -25,17 +25,20 @@ yesCatGifUrl: string = 'assets/yesCat.gif';
  onYes() {
   if (this.errorMessage != null) {
     this.errorMessage = "I WILL REMEMBER THIS!";
-    
+      //Remove the gif after 5 seconds
+
     this.valentinesText = "Thank you for being my Valentine! ❤️";
     this.cdr.detectChanges();
   }
    this.showCatGif(this.yesCatGifUrl);
-    this.confettiService.launchConfetti();
-    this.confettiService.launchConfetti();
-    this.confettiService.launchConfetti();
-    this.confettiService.launchConfetti();
-    this.confettiService.launchConfetti();
+    this.confettiService.launchConfetti(1000, 100);
+    this.confettiService.launchConfetti(1000, 100);
+    this.confettiService.launchConfetti(1000, 100);
 
+  setTimeout(() => {
+    this.errorMessage = null;
+    this.cdr.detectChanges();
+  }, 5000);
 
   }
 

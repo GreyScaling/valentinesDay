@@ -8,10 +8,10 @@ export class ConfettiService {
 
   constructor() { }
 
-  public launchConfetti(): void {
+  public launchConfetti(particleCount_: number , spread_: number): void {
     confetti({
-      particleCount: 2550,
-      spread: 10,
+      particleCount: particleCount_ ,
+      spread: spread_,
     });
   }
   
