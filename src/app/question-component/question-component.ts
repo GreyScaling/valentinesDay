@@ -107,10 +107,7 @@ showCatGif(gifUrl: string) {
   catGif.style.zIndex = '1001';
   document.body.appendChild(catGif);
   //Remove the gif after 5 seconds
-  setTimeout(() => {
-    document.body.removeChild(catGif);
-    this.cdr.detectChanges();
-  }, 5000);
+
 }
 
 
