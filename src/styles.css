@@ -35,3 +35,23 @@ body {
 }
 html, body { height: 100%; background-color: #FFD6D6; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+
+  .card {
+    padding: 15px;
+    margin: 10px;
+  }
+
+  .error {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .loading-overlay {
+    padding: 10px;
+  }
+}

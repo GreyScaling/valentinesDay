@@ -33,6 +33,31 @@ mat-card-content p {
     gap: 20px;
 }
 
+@media (max-width: 768px) {
+  .card {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .page-center {
+    height: auto;
+    padding: 20px;
+  }
+
+  mat-card-title {
+    font-size: 20px;
+  }
+
+  mat-card-content p {
+    font-size: 14px;
+  }
+
+  .actions {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
 
 
 
