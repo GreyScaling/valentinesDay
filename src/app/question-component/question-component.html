@@ -1,0 +1,32 @@
+
+
+<app-header [title]="'Homepage'"></app-header>
+
+<div class="page-center">
+  <mat-card appearance="outlined" class="login-card card">
+    <mat-card-title>{{valentinesText}}</mat-card-title>
+
+    <mat-card-actions  class="actions" >
+      <button mat-raised-button color="primary" id="correctBtn" (click)="onYes()">
+        Yes 💖
+      </button>
+
+      <button mat-stroked-button color="warn" id="wrongButton" (click)="onNo()">
+        No 😢 :
+      </button>
+    </mat-card-actions>
+    <div *ngIf="errorMessage" class="error">
+      {{ errorMessage }}
+    </div>
+  </mat-card>
+
+
+
+</div>
+
+
+<div class="cat-gif-container">
+  <img [src]="cat1GifUrl" alt="Cat Gif 1" class="cat-gif" />
+  <img [src]="cat2GifUrl" alt="Cat Gif 2" class="cat-gif" />
+  
+</div>
